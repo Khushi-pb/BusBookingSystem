@@ -1,0 +1,96 @@
+
+body, html {
+    height: 100%; 
+    margin: 0; 
+  }
+  
+  .container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    background-color: #131720; 
+    background-image: url('./bus4.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+  }
+  
+  .booking {
+    align-items: center;
+    width: 340px;
+    height: auto; 
+    background: transparent; 
+    padding: 2em;
+    color: #fff;
+    border-radius: 17px;
+    text-align: center; 
+  }
+  
+  .booking h1 {
+    margin-bottom: 1em; 
+  }
+  
+  .booking label {
+    display: block; 
+    margin: 1em 0; 
+  }
+  
+  .booking select,
+  .booking input[type="radio"] {
+    width: 100%; 
+    padding: 10px; 
+    border-radius: 5px; 
+  }
+  
+  .seat-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .seat {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .available-icon {
+    color: green;
+  }
+  
+  .booked-icon {
+    color: red;
+    cursor: not-allowed;
+  }
+  
+  .booked {
+    pointer-events: none; 
+  }
+  
+  
+  .btn {
+    background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+    color: #fff;
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background 0.4s ease;
+  }
+  
+  .btn:hover {
+    background: linear-gradient(144deg, #1e1e1e , 20%, #1e1e1e 50%, #1e1e1e);
+    color: rgb(255, 255, 255);
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .booking {
+      width: 90%; 
+      padding: 2em; 
+    }
+  }
+  
